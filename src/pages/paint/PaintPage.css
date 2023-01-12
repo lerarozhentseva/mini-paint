@@ -1,0 +1,9 @@
+.paint_container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+canvas {
+    width: 100%;
+    background-color: white;
+}

@@ -1,0 +1,45 @@
+.paint_h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #004220;
+    margin-top: 20px;
+}
+
+.instruments_container {
+    width: 500px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.btn_instrument {
+    padding: 5px 10px;
+    background-color: #004220;
+    display: inline-block;
+    color: #42ff9e;
+    border: 1px solid #57b35f;
+}
+
+.btn_instrument:hover {
+    filter: brightness(75%);
+}
+
+.clicked {
+    background-color: #57b35f;
+    color: #004220;
+}
+
+.span_input_thickness, .span_input_palette {
+    position: absolute;
+    border: 2px solid #004220;
+    background-color: #57b35f;
+    top: -30px;
+    left: -90px;
+}
+
+.span_input_palette {
+    top: -35px;
+    left: 50px;
+}

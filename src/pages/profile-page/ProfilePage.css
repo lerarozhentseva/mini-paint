@@ -1,0 +1,18 @@
+.container_profile {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.h2_profile {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    color: #004220;
+    margin-top: 100px;
+}
+
+hr {
+    width: 100px;
+    background-color: #004220;
+    border: 1px solid #004220;
+}

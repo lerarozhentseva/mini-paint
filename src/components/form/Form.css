@@ -1,0 +1,52 @@
+.form_container {
+    width: 700px;
+    margin: 150px auto;
+}
+
+.form_container_h1, .form_container_p {
+    color: #004220;
+    font-size: 45px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.form_container_p {
+    font-size: 20px;
+}
+
+.form_container_link {
+    font-family: 'Raleway', sans-serif;
+    color: #004220;
+    font-weight: bold;
+}
+
+.form_controls {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.form_controls_elem {
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #004220;
+    color: #004220;
+    margin: 10px 0;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.form_controls_elem.btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.error {
+    font-size: 18px;
+    margin: 0 0 0 8px;
+    color: darkred;
+}
+
