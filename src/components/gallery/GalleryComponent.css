@@ -1,0 +1,31 @@
+.images_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 300px;
+    margin: 5px auto;
+    display: block;
+}
+
+.card {
+    background-color: #004220;
+    margin: 10px;
+    width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p {
+    color: #42ff9e;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}

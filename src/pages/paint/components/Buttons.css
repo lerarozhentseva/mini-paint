@@ -1,0 +1,15 @@
+.btns_paint {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.btns_paint button {
+    display: inline-block;
+    width: 50px;
+    background-color: #004220;
+    color: #42ff9e;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 20px;
+}

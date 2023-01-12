@@ -1,0 +1,42 @@
+.container {
+    width: 800px;
+    margin: 100px auto;
+}
+
+.container_h1, .container_h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #004220;
+    font-size: 50px;
+}
+
+.container_h2 {
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.btns {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.btn_auth {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 2px solid #004220;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #004220;
+}
