@@ -1,6 +1,6 @@
 .form_container {
     width: 700px;
-    margin: 150px auto;
+    margin: 150px auto 0 auto;
 }
 
 .form_container_h1, .form_container_p {
@@ -48,5 +48,15 @@
     font-size: 18px;
     margin: 0 0 0 8px;
     color: darkred;
+}
+
+.login_container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.google_btn {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
 }
 

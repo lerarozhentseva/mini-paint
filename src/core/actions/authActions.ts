@@ -1,5 +1,5 @@
-import { createAction } from 'redux-actions';
-import {AuthActionsTypes} from './constants';
+import { createAction } from "redux-actions";
+import { AuthActionsTypes } from "./constants";
 
 export const register = createAction(AuthActionsTypes.REGISTER);
 

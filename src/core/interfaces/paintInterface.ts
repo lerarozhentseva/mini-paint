@@ -1,4 +1,4 @@
-import { MouseEvent } from 'react';
+import { MouseEvent } from "react";
 
 export interface PicObj {
   user: string;
@@ -17,14 +17,14 @@ export interface Coordinates {
 
 export interface OnMouseDownArguments {
   e: MouseEvent;
-  context: CanvasRenderingContext2D | undefined | null;
+  context: CanvasRenderingContext2D | null;
   canvasOffset: Coordinates;
   setIsPainting: (isPainting: boolean) => void;
 }
 
 export interface OnMouseMoveArguments {
   e: MouseEvent;
-  context: CanvasRenderingContext2D | undefined | null;
+  context: CanvasRenderingContext2D;
   canvasOffset: Coordinates;
   isPainting: boolean;
   startDrawingPos: Coordinates;
@@ -34,18 +34,7 @@ export interface OnMouseMoveArguments {
 
 export interface ListOfTools {
   [key: string]: {
-    onMouseDown: ({
-      e,
-      canvasOffset,
-      setIsPainting,
-    }: OnMouseDownArguments) => Coordinates;
-    onMouseMove: ({
-      e,
-      context,
-      canvasOffset,
-      isPainting,
-      startDrawingPos,
-      canvasData,
-    }: OnMouseMoveArguments) => void;
+    onMouseDown: (props: OnMouseDownArguments) => Coordinates;
+    onMouseMove: (props: OnMouseMoveArguments) => void;
   };
 }

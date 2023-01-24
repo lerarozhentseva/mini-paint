@@ -1,16 +1,16 @@
-import { firestore } from '../../firebase';
-import { PicObj } from '../interfaces/paintInterface';
+import { firestore } from "../database/firebase";
+import { PicObj } from "../interfaces/paintInterface";
 
 export const getPics = (): Promise<Array<PicObj>> => {
-    return firestore
-        .collection('pictures')
-        .get()
-        .then((snapshot) =>
-            snapshot.docs.map((doc) => ({
-                user: doc.data().user,
-                picData: doc.data().picData,
-            }))
-        );
+  return firestore
+    .collection("pictures")
+    .get()
+    .then((snapshot) =>
+      snapshot.docs.map((doc) => ({
+        user: doc.data().user,
+        picData: doc.data().picData,
+      }))
+    );
 };
 
 export const sendPic = (
@@ -19,7 +19,7 @@ export const sendPic = (
   cb: () => void
 ): void => {
   firestore
-    .collection('pictures')
+    .collection("pictures")
     .add({
       user: user,
       picData: picture,

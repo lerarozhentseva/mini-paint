@@ -1,7 +1,7 @@
-import { handleActions } from 'redux-actions';
-import { PicObj } from '../interfaces/paintInterface';
-import { AnyAction } from 'redux';
-import { PaintActionsTypes } from '../actions/constants';
+import { handleActions } from "redux-actions";
+import { PicObj } from "../interfaces/paintInterface";
+import { AnyAction } from "redux";
+import { PaintActionsTypes } from "../actions/constants";
 
 interface InitialState {
   currentTool: string;
@@ -16,15 +16,15 @@ interface InitialState {
 }
 
 const initialState: InitialState = {
-  currentTool: 'line',
+  currentTool: "line",
   thickness: 1,
-  color: '#000000',
+  color: "#000000",
   allPics: [],
   errors: {
-    picError: '',
-    getPicsErr: '',
+    picError: "",
+    getPicsErr: "",
   },
-  searchEmail: '',
+  searchEmail: "",
 };
 
 const paintReducer = handleActions<InitialState>(
@@ -42,7 +42,10 @@ const paintReducer = handleActions<InitialState>(
       thickness: action.payload.thickness,
     }),
 
-    [PaintActionsTypes.SET_COLOR]: (state: InitialState, action: AnyAction) => ({
+    [PaintActionsTypes.SET_COLOR]: (
+      state: InitialState,
+      action: AnyAction
+    ) => ({
       ...state,
       color: action.payload.color,
     }),
