@@ -112,11 +112,11 @@ const PaintComponent: FC = (): JSX.Element => {
   return (
     <>
       <NavigationHeader
-        title={"Paint"}
-        link={"/profile"}
-        linkName={"Profile Page"}
+        title="Paint"
+        link="/profile"
+        linkName="Profile Page"
       />
-      <div className={"paint_container"}>
+      <div className="paint_container">
         <Instruments />
         <div style={{ width: "700px", margin: "0 auto" }}>
           <canvas
