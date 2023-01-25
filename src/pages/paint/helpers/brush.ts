@@ -27,6 +27,7 @@ const brush = {
   }: OnMouseMoveArguments): void => {
     if (isPainting && context) {
       context.lineTo(e.pageX - canvasOffset.left, e.pageY - canvasOffset.top);
+      context.lineJoin = "round";
       context.stroke();
     }
   },

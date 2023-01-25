@@ -3,9 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { sendPic } from "../../../core/actions/paintActions";
 import { CanvasSize } from "../../../core/interfaces/paintInterface";
-import SaveAltIcon from "@mui/icons-material/SaveAlt";
-import ClearIcon from "@mui/icons-material/Clear";
-import CollectionsIcon from "@mui/icons-material/Collections";
+import {SaveAlt, Clear, Collections} from "@mui/icons-material";
 import Tooltip from "@mui/material/Tooltip";
 import "./Buttons.css";
 import firebase from "firebase/compat/app";
@@ -56,17 +54,17 @@ const Buttons: FC<ButtonsPanelProps> = ({
     <div className="btns_paint">
       <Tooltip title="Clear all">
         <button onClick={clearSheet}>
-          <ClearIcon />
+          <Clear />
         </button>
       </Tooltip>
       <Tooltip title="Save">
         <button onClick={savePicture}>
-          <SaveAltIcon />
+          <SaveAlt />
         </button>
       </Tooltip>
       <Tooltip title="Go to gallery">
         <button onClick={toGallery}>
-          <CollectionsIcon />
+          <Collections />
         </button>
       </Tooltip>
     </div>
